@@ -95,4 +95,3 @@ axios.get("https://catfact.ninja/fact")
       audio.play();
     });
   });
-

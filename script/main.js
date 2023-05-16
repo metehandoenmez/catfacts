@@ -87,4 +87,12 @@ axios.get("https://catfact.ninja/fact")
     }
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var audioDiv = document.getElementById('audioDiv');
+    var audio = document.getElementById('audio');
   
+    audioDiv.addEventListener('click', function() {
+      audio.play();
+    });
+  });
+

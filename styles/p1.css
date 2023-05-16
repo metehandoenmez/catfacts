@@ -1,0 +1,171 @@
+:root {
+  --p1-c1: #8294C4;
+  --p1-c2: #ACB1D6;
+  --p1-c3: #DBDFEA;
+  --p1-c4: #FFEAD2;
+}
+
+
+body {
+  background-color: var(--p1-c3);
+}
+
+.center_top {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--p1-c1);
+  border-radius: 32px;
+  border: 16px solid var(--p1-c4);
+}
+#randomImage {
+  width: 340px;
+  border-radius: 50%;
+  border: 16px solid var(--p1-c4);
+  animation-name: img_anim;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+.center_top .fact {
+  align-self: center;
+  padding: 30px;
+  padding-left: 50px;
+  font-family: "Kanit", sans-serif;
+  max-width: 700px;
+  min-width: 700px;
+  font-size: 40px;
+  color: var(--p1-c4);
+  text-align: center;
+  cursor: none;
+}
+.center_tag b{
+  cursor: grab;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+#button {
+  color: var(--p1-c4);
+  background-color: var(--p1-c2);
+  width: 200px;
+  height: 80px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 32px;
+  font-size: 32px;
+  cursor: pointer;
+}
+#button:hover {
+  background-color: var(--p1-c2);
+  opacity: 0.7;
+  color: var(--p1-c1);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.center_tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family:"Kanit", sans-serif;
+  color: var(--p1-c1);
+  font-size: 80px;
+  justify-self: flex-start;
+  flex: 0.48;
+  margin-left: 20px;
+  height: 100vh;
+}
+
+@keyframes img_anim {
+  0% {
+      transform: translate(0px, 0px);
+  }
+  33% {
+      transform: translate(390px, 0px) rotate(45deg);
+  }
+  66% {
+    transform: translate(-390px, 0px) rotate(-45deg);
+  }
+  100% {
+    transform: translate(0px, 0px);
+}
+}
+
+.palette-picker {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.palette-picker label {
+  margin-right: 10px;
+  color: var(--p1-c1);
+}
+
+.palette-picker select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.signature {
+  display: flex;
+  position: fixed;
+  bottom: 25px;
+  right: 40px;
+  font-family: "Kanit", sans-serif;
+  gap: 10px;
+}
+
+.signature span {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-left: 7px;
+  bottom: 10px;
+}
+.signature a {
+  text-decoration: none;
+}
+
+.palette-picker {
+  display: flex;
+  align-items: center;
+}
+
+.palette-picker label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.palette-picker input[type="radio"] {
+  display: none;
+}
+
+.palette-picker span {
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.palette-picker input[type="radio"]:checked + span {
+  text-decoration:line-through;
+  text-underline-offset: 7px;
+}
+.palette-picker b {
+  font-weight: normal;
+  padding-right: 20px;
+}

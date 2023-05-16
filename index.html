@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/cat.ico">
     <title>Cat Facts</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -20,25 +20,25 @@
             <div class="palette-picker"><b>Select a Palette</b>
                 <label>
                   <input type="radio" name="palette" value="p1" checked>
-                  <span style="color:#8294c4">◯</span>
+                  <span style="color:#8294c4">◐</span>
                 </label>
                 <label>
                   <input type="radio" name="palette" value="p2">
-                  <span style="color:#b2a4ff">◯</span>
+                  <span style="color:#b2a4ff">◐</span>
                 </label>
                 <label>
                   <input type="radio" name="palette" value="p3">
-                  <span style="color:#933ce4">◯</span>
+                  <span style="color:#933ce4">◐</span>
                 </label>
                 <label>
                   <input type="radio" name="palette" value="p4">
-                  <span style="color:#97aa58">◯</span>
+                  <span style="color:#97aa58">◐</span>
                 </label>
                 <label>
                   <input type="radio" name="palette" value="p5">
-                  <span style="color:#ff9494">◯</span>
+                  <span style="color:#ff9494">◐</span>
                 </label>
-              </div>
+            </div>
         </div>
         <div class="center_container" id="audioDiv">
             <div class="center">
@@ -55,6 +55,8 @@
         </svg><span>/ metehandoenmez</span></a>
         </div>
     </div>
-
+    <button id="screenshot-btn">Save<img src="images/takescreenshot.svg" width="40px" height="40px"></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

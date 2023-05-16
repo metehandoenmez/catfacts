@@ -29,6 +29,8 @@ body {
   animation-direction: normal;
   animation-fill-mode: none;
   animation-play-state: running;
+  min-width: 340px;
+  min-height: 340px;
 }
 .center_top .fact {
   align-self: center;
@@ -40,7 +42,6 @@ body {
   font-size: 40px;
   color: var(--p1-c4);
   text-align: center;
-  cursor: none;
 }
 .center_tag b{
   cursor: grab;
@@ -168,4 +169,7 @@ body {
 .palette-picker b {
   font-weight: normal;
   padding-right: 20px;
+}
+.center_container {
+  cursor: pointer;
 }

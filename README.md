@@ -2,5 +2,5 @@
 Cat Facts
 A simple front-end project using basic HTML, CSS and JS.
 https://catfact.ninja/ API and Axios plugin is used.
-To check the live version out, pleasae visit:
+To check the live version out, please visit:
 https://metehandoenmez.github.io/catfacts/
